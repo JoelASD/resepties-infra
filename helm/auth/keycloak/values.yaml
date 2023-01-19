@@ -979,8 +979,8 @@ postgresql:
   architecture: standalone
   primary:
     persistence:
-      storageClass: "vultr-block-storage"
-      size: 10Gi
+      storageClass: ""
+      size: 40Gi
 ## External PostgreSQL configuration
 ## All of these values are only used when postgresql.enabled is set to false
 ## @param externalDatabase.host Database host
