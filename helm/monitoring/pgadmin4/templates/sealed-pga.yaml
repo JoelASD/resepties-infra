@@ -1,0 +1,15 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: pga
+  namespace: monitoring
+spec:
+  encryptedData:
+    password: AgCAossKOVhTF1xocsqoQeyBrzEQt87kJpHNucUKheDuSWGR6Rjj7PU8Lk7tDw/TIFqLnuHuSti4GNalGnncYPR4+KrffsLh5HBwyNRkmVsSv5uYHqWInhTYoaG4/oPneDIrAwcO4pMqNq1uyvUaDjI4xzcaaDyZbHAodmjjrN0EMCOxatl5ane5WpFuEJrv85a/2ratuT48jfBAvat+5oWKEy6ETL7pwO2HgBJTs3UuZz5k5DYy0UXjscxNdIMDCLLG4c8Vf396ywfGHxqwtNR1DOFFJALFE0R9RBcdTKId4BpeWXCv6lgeN+PU8NhxMOvbI0TtF+pRRrUCNAPXlQp9z/FcSiRIwWvtc7vgxPFEwcJ9eoWrZOqZ/eYcST7zmitN1+74CNXVEdohrpoeh6DT2v1gJZ73FP2WHx8oa8LhWXqSFxXHXDSA98Iris5Ew5JDVkJ6puIGLuOhpcrPnS3T7UpI4q+ESBTUZLf00TwbfhrO7IbbBdj5iCrINI9AYk5/6gyFH95zH+GV07rScVeIRw7KscrC6lLrfEeshU/y/Okf65HuzUZDxVBN5vuzGGM4TBuaNPoDttRPJvS6ipfQVSgCAoSJTgPOFlsUp5GWGVgcsyI6b518RXhtCTnebmxN6743yfgaNQ0bHAn9MquUmYNRz/32+XU5PiumT9/Nmi65AX6cy/ZSE6lmwWP3Vw+U64h3VmbWRjtG/VlDpgZC
+  template:
+    metadata:
+      creationTimestamp: null
+      name: pga
+      namespace: monitoring
+
