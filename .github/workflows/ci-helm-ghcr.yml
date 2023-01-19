@@ -36,6 +36,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
+      - name: print tree
+        run: |
+          tree
+      
       - name: helm lint
         run: |
           helm lint helm/auth/keycloak --strict --values helm/auth/keycloak/values.yaml
