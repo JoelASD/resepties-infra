@@ -18,7 +18,7 @@ on:
 env:
   # Chart versions
   KEYCLOAK_CNAME: "keycloak"
-  KEYCLOAK_CVER: 13.0.0
+  KEYCLOAK_CVER: 13.0.1
   POSTGRESQL_CNAME: "postgresql"
   POSTGRESQL_CVER: 12.1.8
   PGADMIN_CNAME: "pgadmin4"
