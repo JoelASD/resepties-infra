@@ -17,7 +17,7 @@ on:
 
 env:
   # Chart versions
-  KEYCLOAK_CNAME: "keycloak-stack"
+  KEYCLOAK_CNAME: "keycloak"
   KEYCLOAK_CVER: 13.0.0
   POSTGRESQL_CNAME: "postgresql"
   POSTGRESQL_CVER: 12.1.8
@@ -38,7 +38,7 @@ jobs:
       
       - name: helm lint
         run: |
-          helm lint helm/auth/keycloak-stack --strict --values helm/auth/keycloak-stack/values.yaml
+          helm lint helm/auth/keycloak --strict --values helm/auth/keycloak/values.yaml
           helm lint helm/app/postgresl --strict --values helm/app/postgresql/values.yaml
           helm lint helm/monitoring/pgadmin4 --strict --values helm/monitoring/pgadmin4/values.yaml
           
