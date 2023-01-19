@@ -60,6 +60,6 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         run: |
           ls
-          helm push ${{ KEYCLOAK_CNAME }}-${{ KEYCLOAK_CVER }}.tgz oci://ghcr.io/${{ github.repository_owner }}/helm
-          helm push ${{ KEYCLOAK_CNAME }}-${{ KEYCLOAK_CVER }}.tgz oci://ghcr.io/${{ github.repository_owner }}/helm
-          helm push ${{ KEYCLOAK_CNAME }}-${{ KEYCLOAK_CVER }}.tgz oci://ghcr.io/${{ github.repository_owner }}/helm
+          helm push ${KEYCLOAK_CNAME}-${KEYCLOAK_CVER}.tgz oci://ghcr.io/${{ github.repository_owner }}/helm
+          helm push ${POSTGRESQL_CNAME}-${POSTGRESQL_CVER}.tgz oci://ghcr.io/${{ github.repository_owner }}/helm
+          helm push ${PGADMIN_CNAME}-${PGADMIN_CVER}.tgz oci://ghcr.io/${{ github.repository_owner }}/helm
