@@ -42,7 +42,7 @@ jobs:
       
       - name: helm lint
         run: |
-          helm lint helm/auth/keycloak --strict --values helm/auth/keycloak/values.yaml
+          helm lint helm/auth/keycloak --strict --values helm/auth/keycloak/values-vultr.yaml
           helm lint helm/app/postgresql --strict --values helm/app/postgresql/values.yaml
           helm lint helm/monitoring/pgadmin4 --strict --values helm/monitoring/pgadmin4/values.yaml
           
