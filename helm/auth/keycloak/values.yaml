@@ -980,7 +980,7 @@ postgresql:
   primary:
     persistence:
       storageClass: ""
-      size: 40Gi
+      size: 8Gi
 ## External PostgreSQL configuration
 ## All of these values are only used when postgresql.enabled is set to false
 ## @param externalDatabase.host Database host
