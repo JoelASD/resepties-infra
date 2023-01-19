@@ -3,7 +3,7 @@ kind: SealedSecret
 metadata:
   creationTimestamp: null
   name: psql
-  namespace: auth
+  namespace: app
 spec:
   encryptedData:
     password: AgAw/S8XN48KK1EXm2/KFztWrZBi2ckXMwqdcQsiD88vXeTbquKvPSri4KtVmuel4hqulnYmW9qo0MsiP8f9dgdUJx+0mm0vayKDTZoqzeTUx3TDowUEMhbE1IN6lAK88w9ij5dxFwJ1Nx49tuj8o7py5DwCOUpOAWEjnQL76AO9WqGb+VpTxR9HRmtCX7VPw7MExGKlEQzLdr5P1gj7WMKz7vh9TljpqOplEm8IB7n9OFPIA3sUBxLa3XqvqQ5tJu0+VzTH5x5vAlm3P3ggK888YiSyWvAOCLJhezUUCn3+kE544yHLSQNSPK/Nw5qs/4oDVeCaUlhHierkiWCmrmlMFQrwqgnSokWTJMlM4IYjhYjVwy61Uvu6kqOhM3/K2t+CLKJAMmiaAaSVS5yWOYjV6fAwr/ohHieK5gyKm6iy28kIIJlZiNZWPyNagLVXcZ9Y0NiS5aKTcQZA+wo09XDvuuh9kvbiHF+uiVVUiyk3geL6Gaf4gdO5B2iIz9nW/WAuNqqygF5FZLeayjnNg76lDpJHuZ9vMXsKuklEQg7hhdZjqmwIhzpkMDTm8Y6YmjuBVilNhadiW5Q97AwRnaKWvw1uAY61hToBwzyocS9ow0T5g9Fdj9nLiaDWAW70Zfr/8z8fO236atyi2lkb0yzD7t47p4ZFF8f8Bhrpr334CZSMIbX7OPeAKvAHRX5S5ZLsv7WCqNNAABILy8MiWfIO
@@ -13,5 +13,5 @@ spec:
     metadata:
       creationTimestamp: null
       name: psql
-      namespace: auth
+      namespace: app
 
