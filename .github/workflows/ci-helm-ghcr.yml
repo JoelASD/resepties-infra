@@ -40,16 +40,16 @@ jobs:
         run: |
           tree
       
-      #- name: helm lint
-      #  run: |
-      #    helm lint helm/auth/keycloak --strict --values helm/auth/keycloak/values.yaml
-      #    helm lint helm/app/postgresl --strict --values helm/app/postgresql/values.yaml
-      #    helm lint helm/monitoring/pgadmin4 --strict --values helm/monitoring/pgadmin4/values.yaml
+      - name: helm lint
+        run: |
+          helm lint helm/auth/keycloak --strict --values helm/auth/keycloak/values.yaml
+          helm lint helm/app/postgresql --strict --values helm/app/postgresql/values.yaml
+          helm lint helm/monitoring/pgadmin4 --strict --values helm/monitoring/pgadmin4/values.yaml
           
       - name: helm package
         run: |
           helm package helm/auth/keycloak --version $KEYCLOAK_CVER
-          helm package helm/app/postgresl --version $POSTGRESQL_CVER
+          helm package helm/app/postgresql --version $POSTGRESQL_CVER
           helm package helm/monitoring/pgadmin4 --version $PGADMIN_CVER
           
       - name: helm login
