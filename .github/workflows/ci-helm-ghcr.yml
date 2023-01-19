@@ -44,7 +44,7 @@ jobs:
           
       - name: helm package
         run: |
-          helm package helm/auth/keycloak-stack --version $KEYCLOAK_CVER
+          helm package helm/auth/keycloak --version $KEYCLOAK_CVER
           helm package helm/app/postgresl --version $POSTGRESQL_CVER
           helm package helm/monitoring/pgadmin4 --version $PGADMIN_CVER
           
